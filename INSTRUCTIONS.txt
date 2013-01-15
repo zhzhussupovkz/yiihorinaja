@@ -22,7 +22,7 @@ USAGE
 2.Run a widget
 
 <?php 
-	$this->widget('ext.yiiHorinaja.yiiHorinaja', array(
+	$this->widget('ext.yiihorinaja.yiiHorinaja', array(
 		'id' => 'demo',
 		'delay' => 0.5,
 		'duration' => 4,
