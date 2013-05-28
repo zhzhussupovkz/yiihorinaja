@@ -21,10 +21,22 @@ class yiiHorinaja extends CWidget
 	//pagination: 'true' or 'false'
 	public $pagination = 'true';
 
+	//slides
+	public $slides = array();
+
 	//run widget
 	public function run()
 	{
 		$this->allScripts();
+
+		echo '<div id="demo" class="horinaja"><ul>';
+
+		foreach ($this->slides as $item) {
+			echo '<li>'.$item.'</li>';
+		}
+
+		echo '</ul></li>';
+
 		$script = 'document.observe("dom:loaded", 
 			function() {
 				new Horinaja(
